@@ -16,7 +16,6 @@ import javax.swing.SwingUtilities;
  * This shows an alternative solutions using lambdas
  */
 public final class ConcurrentGUI extends JFrame {
-
     private static final long serialVersionUID = 1L;
     private static final double WIDTH_PERC = 0.2;
     private static final double HEIGHT_PERC = 0.1;
@@ -81,7 +80,7 @@ public final class ConcurrentGUI extends JFrame {
                      * This is just a stack trace print, in a real program there
                      * should be some logging and decent error reporting
                      */
-                    ex.printStackTrace();
+                    ex.printStackTrace(); //NOPMD
                 }
             }
         }
